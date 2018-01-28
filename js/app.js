@@ -1,5 +1,5 @@
 /*jslint browser:true */
-function showHide(button)
+function showHide(event)
 {
 var div = document.querySelector("#primary_nav");
 if (div.style.display !== "none") {
@@ -10,5 +10,5 @@ else {
 }
 event.stopPropagation();
  }	
-var button = document.querySelector('.to_nav').addEventListener('click', showHide); 
+document.querySelector('.to_nav').addEventListener('click', showHide); 
 
