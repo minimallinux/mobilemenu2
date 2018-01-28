@@ -69,7 +69,7 @@ header {
     float: left;
     letter-spacing: 0.2em;
 }*/
-a.to_nav {
+a.js-btn{
     float: right;
     color: whitesmoke;
     text-decoration: none;
@@ -81,8 +81,8 @@ a.to_nav {
     border-radius: 2px;
 }
  
-a.to_nav:hover,
-a.to_nav:focus {
+a.js-btn:hover,
+a.js-btn:focus {
     color: lightgray;
     border-color: lightgray;
    
@@ -117,7 +117,7 @@ a.to_nav:focus {
 /*media queries*/
  
 @media only screen and (min-width: 900px) {
-    a.to_nav {
+    a.js-btn {
         display: none;
     }
      

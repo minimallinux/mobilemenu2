@@ -10,5 +10,5 @@ else {
 }
 event.stopPropagation();
  }	
-document.querySelector('.to_nav').addEventListener('click', showHide); 
+document.querySelector('.js-btn').addEventListener('click', showHide); 
 
