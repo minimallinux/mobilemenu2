@@ -75,7 +75,7 @@ a.js-btn{
     text-decoration: none;
     padding: 0 10px;
     font-size: 28px;
-    border:  solid 2px #fff;
+    border:  solid 1px #fff;
      -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
@@ -143,11 +143,11 @@ a.js-btn:focus {
         border: none;
         padding: 0 10px;
    }
-
 }
 /*Hover and display for Mobile*/
 @media only screen and (max-width: 899px) {
- #primary_nav {
+#primary_nav {
+        /*width: 50%;*/
         display: none;
     }
 #primary_nav li a:hover,
@@ -155,6 +155,9 @@ a.js-btn:focus {
    background: lightgray; 
    color: #000;
 }   
+}
+.is-hidden {
+display:  none;
 }
 
  
