@@ -1,0 +1,160 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+/*begin our styles*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?dipnwf');
+  src:  url('../fonts/icomoon.eot?dipnwf#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?dipnwf') format('truetype'),
+    url('../fonts/icomoon.woff?dipnwf') format('woff'),
+    url('../fonts/icomoon.svg?dipnwf#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+} 
+body {
+    font: 16px/1.4em 'PT Sans', sans-serif;;
+    color: whitesmoke;
+}
+/*layout*/
+ 
+.wrapper {
+}
+/*header*/
+ 
+header {
+    background: #1c1c1c;
+    padding: 15px 20px;
+}
+/*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
+        header:before,
+        header:after {
+            content:"";
+            display:table;
+        }
+         
+        header:after {
+            clear:both;
+        }
+         
+        /* For IE 6/7 (trigger hasLayout) */
+        header {
+            zoom:1;
+        }
+ 
+/*h1.brand a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    float: left;
+    letter-spacing: 0.2em;
+}*/
+a.to_nav {
+    float: right;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 28px;
+    border:  solid 2px #fff;
+     -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+ 
+a.to_nav:hover,
+a.to_nav:focus {
+    color: lightgray;
+    border-color: lightgray;
+   
+}
+/*navigation*/ 
+ 
+#primary_nav ul {
+    list-style: none;
+    background: #1c1c1c;
+    padding: 8px 0;
+}
+ 
+#primary_nav li a {
+    display: block;
+    padding:  0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 2em;
+    height: 2em;
+    border-bottom: 1px solid #383838;
+}
+ 
+#primary_nav li:last-child a {
+    border-bottom: none;
+}
+ 
+#primary_nav li a:hover,
+#primary_nav li a:focus {
+   color: lightgray; 
+}
+/*media queries*/
+ 
+@media only screen and (min-width: 900px) {
+    a.to_nav {
+        display: none;
+    }
+     
+    .wrapper {
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
+     
+    #primary_nav {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background: none;
+    }
+     
+    #primary_nav li {
+        display: inline;
+    }
+     
+    #primary_nav li a {
+        float: left;
+        border: none;
+        padding: 0 10px;
+   }
+
+}
+/*Hover and display for Mobile*/
+@media only screen and (max-width: 899px) {
+ #primary_nav {
+        display: none;
+    }
+#primary_nav li a:hover,
+#primary_nav li a:focus {
+   background: lightgray; 
+   color: #000;
+}   
+}
+
+ 
