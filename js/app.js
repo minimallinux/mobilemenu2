@@ -28,7 +28,7 @@ function fadeIn(el, display){
     }
   })();
 }
-var panel = document.querySelector('body');
+
 var btn = document.querySelector('.js-btn');
 var el = document.querySelector('#primary_nav');
 btn.addEventListener('click', function(e){
@@ -39,8 +39,7 @@ btn.addEventListener('click', function(e){
     fadeOut(el);
   }
 });
-panel.addEventListener('click', function(e){
-fadeOut(el);
+
 
 /*Alernatives
 (function() {
