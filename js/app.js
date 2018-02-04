@@ -28,9 +28,9 @@ function fadeIn(el, display){
     }
   })();
 }
+var panel = document.querySelector('body');
 var btn = document.querySelector('.js-btn');
 var el = document.querySelector('#primary_nav');
-
 btn.addEventListener('click', function(e){
   if(el.classList.contains('is-hidden')){
     fadeIn(el);
@@ -39,3 +39,16 @@ btn.addEventListener('click', function(e){
     fadeOut(el);
   }
 });
+panel.addEventListener('click', function(e){
+fadeOut(el);
+
+/*Alernatives
+(function() {
+    var burger = document.querySelector('.js-btn');
+    var menu = document.querySelector('#primary_nav');
+    burger.addEventListener('click', function() {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+    });
+})();*/
+
